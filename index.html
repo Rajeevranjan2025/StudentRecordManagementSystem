@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+body{
+  
+}
+ .fist-page{
+ 
+  position:relative;
+  top:50px;
+  left:380px;
+   background:cyan;
+   width:700px;
+   height:500px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   
+   border-radius:10px;
+   border:5px solid black;
+  box-shadow: 10px 10px;
+ }
+ 
+ @media(max-width:1250px){
+ 
+  .fist-page{
+    background:yellow;
+    width:400px;
+    heigth:300px;
+  }
+  
+ }
+ 
+ @media(max-width:300px){
+ 
+  .fist-page{
+    background:navy;
+    width:400px;
+    heigth:300px;
+  }
+  
+ }
+ 
+ 
+ h1{
+ margin-left:360px;
+ 
+ }
+ button{
+   width:100px;
+   height:50px;
+   background:green;
+   border-radius:10px;
+ }
+</style>
+</head>
+<body>
+  <h1>Welcome To Your Student Record Managemet System</h1>
+  <div class="fist-page">
+  
+   <form action="home" >
+     
+      <div >
+        <h3>Click Here To Add Student Details </h3>
+        <button formaction="student.html">Add Record</button>
+      </div>
+      <div>
+        <h3 id="get">Click Here To Fetch Student Details </h3>
+        <button  formaction="fetch.html">Fetch Record</button>
+      </div>
+      <div>
+        <h3>Click Here To Update Student Records </h3>
+        <button  formaction="update.html">Update Record</button>
+      </div>
+      <div>
+        <h3>Click Here To Delete Student Records </h3>
+        <button  formaction="delete.html">Delete Record</button>
+      </div>
+   </form>
+   </div>
+</body>
+</html>

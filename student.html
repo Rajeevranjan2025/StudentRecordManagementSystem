@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Details</title>
+<style>
+ .box{
+   background:cyan;
+   width:600px;
+   height:500px;
+   display:flex;
+   align-item:center;
+   justify-content:center;
+   position:relative;
+   left:450px;
+   top:50px;
+   border-radius:10px;
+   border:5px solid black;
+  box-shadow: 10px 10px;
+ }
+ h2{
+  margin-left:20px;
+  
+ }
+ form{
+  margin-top:10px;
+  
+ }
+ form input{
+  margin-top:10px;
+  border-radius:5px;
+  outline:none;
+  padding:5px;
+  display:flex;
+  justify-content:center;
+ }
+ 
+ #input{
+ margin-left:130px;
+ 
+ }
+ #btn{
+ 
+ margin-left:140px;
+ height:40px;
+ width:150px;
+ border-radius:10px;
+ background:#7FFFD4;
+ 
+ }
+ form label{
+  margin-left:150px;
+ }
+</style>
+</head>
+<body>
+<div class="box">
+<form action="add" method="post">
+<h2>Enter Student Details to Enroll in Course</h2>
+<div id="input">
+Enter FirstName: <input type="text" name="n1"> <br>
+Enter LastName: <input type="text" name="n2"><br>
+Enter Roll No: <input type="number" name="rn"><br>
+Enter Course Name: <input type="text" name="cn"><br>
+</div>
+<input id="btn" type="submit" >
+
+</form>
+</div>
+</body>
+</html>
